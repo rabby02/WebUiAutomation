@@ -1,0 +1,31 @@
+package practice.java;
+
+public class tester {
+	
+	public static void m5()
+	{
+		Functionalities.multtiInput(5, "Yasin looks like", 25);
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Functionalities func=new Functionalities();
+	//	func.multtiInput(5, "Yasin looks like", 25);
+		
+		
+		//Static method can be called as class name//
+		
+		
+		
+
+	}
+	
+	
+	
+	
+
+}
+

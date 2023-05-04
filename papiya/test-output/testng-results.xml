@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-16T01:41:31 EST" name="Default suite" finished-at="2023-02-16T01:41:31 EST" duration-ms="50">
+    <groups>
+    </groups>
+    <test started-at="2023-02-16T01:41:31 EST" name="Default test" finished-at="2023-02-16T01:41:31 EST" duration-ms="50">
+      <class name="papiyaSul.LinktoData">
+        <test-method signature="Test01(int,int,int)[pri:0, instance:papiyaSul.LinktoData@64cd705f]" started-at="2023-02-16T01:41:31 EST" name="Test01" data-provider="Data-provider" finished-at="2023-02-16T01:41:31 EST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test01 -->
+        <test-method signature="Test01(int,int,int)[pri:0, instance:papiyaSul.LinktoData@64cd705f]" started-at="2023-02-16T01:41:31 EST" name="Test01" data-provider="Data-provider" finished-at="2023-02-16T01:41:31 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test01 -->
+        <test-method signature="Test01(int,int,int)[pri:0, instance:papiyaSul.LinktoData@64cd705f]" started-at="2023-02-16T01:41:31 EST" name="Test01" data-provider="Data-provider" finished-at="2023-02-16T01:41:31 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test01 -->
+        <test-method signature="strstring(java.lang.String,int)[pri:0, instance:papiyaSul.LinktoData@64cd705f]" started-at="2023-02-16T01:41:31 EST" name="strstring" data-provider="getLength" finished-at="2023-02-16T01:41:31 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hello]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- strstring -->
+        <test-method signature="strstring(java.lang.String,int)[pri:0, instance:papiyaSul.LinktoData@64cd705f]" started-at="2023-02-16T01:41:31 EST" name="strstring" data-provider="getLength" finished-at="2023-02-16T01:41:31 EST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[papiya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- strstring -->
+        <test-method signature="strstring(java.lang.String,int)[pri:0, instance:papiyaSul.LinktoData@64cd705f]" started-at="2023-02-16T01:41:31 EST" name="strstring" data-provider="getLength" finished-at="2023-02-16T01:41:31 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HelloworldHelloworld]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- strstring -->
+      </class> <!-- papiyaSul.LinktoData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

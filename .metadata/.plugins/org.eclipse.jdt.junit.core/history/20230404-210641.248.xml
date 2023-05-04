@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="cucumberjava.io" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="StepDefinition.TestRunner" time="0.516">
+    <testcase name="initializationError" classname="StepDefinition.TestRunner" time="0.516">
+      <error>java.lang.IllegalArgumentException: Couldn't create parent directories of '/Users/shaheenhaider/eclipse-workspace/DemoProject/cucumberjava.io/target/HtmlReports/report.html'.
+Make sure the the parent directory '/Users/shaheenhaider/eclipse-workspace/DemoProject/cucumberjava.io/target/HtmlReports' isn't a file.
+
+Note: This usually happens when plugins write to colliding paths.
+For example: 'html:target/cucumber, json:target/cucumber/report.json'
+You can fix this by making the paths do no collide.
+For example: 'html:target/cucumber/report.html, json:target/cucumber/report.json'
+The details are in the stack trace below:
+	at io.cucumber.core.plugin.PluginFactory.createFileOutputStream(PluginFactory.java:222)
+	at io.cucumber.core.plugin.PluginFactory.openStream(PluginFactory.java:199)
+	at io.cucumber.core.plugin.PluginFactory.convert(PluginFactory.java:166)
+	at io.cucumber.core.plugin.PluginFactory.instantiate(PluginFactory.java:99)
+	at io.cucumber.core.plugin.PluginFactory.create(PluginFactory.java:63)
+	at io.cucumber.core.plugin.Plugins.createPlugins(Plugins.java:32)
+	at io.cucumber.core.plugin.Plugins.&lt;init&gt;(Plugins.java:25)
+	at io.cucumber.junit.Cucumber.&lt;init&gt;(Cucumber.java:160)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)
+	at org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createUnfilteredTest(JUnit4TestLoader.java:90)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:76)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:49)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:513)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+Caused by: java.nio.file.FileAlreadyExistsException: /Users/shaheenhaider/eclipse-workspace/DemoProject/cucumberjava.io/target/HtmlReports
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:94)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:753)
+	at io.cucumber.core.plugin.PluginFactory.createFileOutputStream(PluginFactory.java:218)
+	... 24 more
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

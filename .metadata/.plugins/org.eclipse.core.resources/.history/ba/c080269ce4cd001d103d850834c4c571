@@ -1,0 +1,23 @@
+package RealTime;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class TestMidtrans {
+	@Test
+	public void BrowserTest() throws InterruptedException
+	{
+	System.setProperty("webdriver.gecko.driver","/Users/shaheenhaider/Downloads/geckodriver");		
+    WebDriver driver=new FirefoxDriver();
+  
+    driver.get("https://demo.midtrans.com");
+   // driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+    Thread.sleep(1000);
+    
+    
+	}
+
+}

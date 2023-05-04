@@ -1,0 +1,54 @@
+package RealTime;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class AmazonSignInPage {
+	
+	@Test
+	public void verifySignIn() throws InterruptedException
+	{
+		   System.setProperty("webdriver.gecko.driver","/Users/shaheenhaider/Downloads/geckodriver");		
+  		   WebDriver driver=new FirefoxDriver();
+		   driver.get("https://www.amazon.com/");
+		   driver.manage().window().maximize();
+		   WebElement x=driver.findElement(By.linkText("Your Account"));
+		   x.click();
+		   WebElement exp=driver.findElement(By.id("nav-link-accountList-nav-line-1"));
+			  
+		   Actions act=new Actions(driver);
+		   
+		   act.moveToElement(exp).perform();
+		   
+		   WebElement y=driver.findElement(By.xpath("/html/body/div[1]/header/div/div[3]/div[2]/div[2]/div/div[1]/div/a/span"));
+		   y.click();
+	
+		 /* WebElement mail=driver.findElement(By.id("ap_email"));
+		   mail.sendKeys("yasinrabby2114@icloud.com");
+		   Thread.sleep(2000);
+		   WebElement btn=driver.findElement(By.id("continue"));
+		   btn.click();
+		   WebElement pwd=driver.findElement(By.id("ap_password"));
+		   pwd.sendKeys("Rajurabby2114");
+		  Thread.sleep(2000);
+		   WebElement submitBtn=driver.findElement(By.id("signInSubmit"));
+		   submitBtn.click();
+		  /* WebElement exp=driver.findElement(By.id("nav-link-accountList-nav-line-1"));
+		  
+		   Actions act=new Actions(driver);
+		   
+		   act.moveToElement(exp).perform();
+		   
+		   WebElement sin=  driver.findElement(By.className("nav-action-inner"));
+		   sin.click();*/
+		   
+		   
+		   
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runnerclass" project="CucumberDemo1" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="StepDefinitions.Runnerclass" time="2.122">
+    <testsuite name="Check google Check functionality" time="2.122">
+      <testcase name="Validate Google search is working" classname="Check google Check functionality" time="2.122"/>
+    </testsuite>
+  </testsuite>
+</testrun>

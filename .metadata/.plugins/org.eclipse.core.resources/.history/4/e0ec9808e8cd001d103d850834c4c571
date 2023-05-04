@@ -1,0 +1,84 @@
+package RealTime;
+
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TestMidtrans {
+
+	/*@Test
+	public void BrowserTest() throws InterruptedException
+	{
+	System.setProperty("webdriver.gecko.driver","/Users/shaheenhaider/Downloads/geckodriver");		
+    WebDriver driver=new FirefoxDriver();
+  
+    driver.get("https://demo.midtrans.com");
+   // driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+    Thread.sleep(1000);
+    
+    
+    
+	}*/
+	/*@Test
+	public void pageIsDisplayed()
+	{
+		System.setProperty("webdriver.gecko.driver","/Users/shaheenhaider/Downloads/geckodriver");		
+	    WebDriver driver=new FirefoxDriver();
+	    driver.get("https://demo.midtrans.com");
+	    
+		WebElement Logo=driver.findElement(By.xpath("//*[@id='container']/div/div/div[1]/nav/div/h1/a"));
+		
+		if(Logo.isDisplayed())
+		{
+			
+			Assert.assertTrue(true);
+		}
+		
+		
+		
+		
+	}*/
+	
+	/*@Test
+	public void BuyNowbtnTest()
+	{
+		System.setProperty("webdriver.gecko.driver","/Users/shaheenhaider/Downloads/geckodriver");		
+	    WebDriver driver=new FirefoxDriver();
+	    driver.get("https://demo.midtrans.com");
+	    WebElement btn=driver.findElement(By.linkText("BUY NOW"));
+	    btn.click();
+		
+	}*/
+	
+	@Test
+	public void VerifyMidtran()
+	{
+		System.setProperty("webdriver.gecko.driver","/Users/shaheenhaider/Downloads/geckodriver");		
+	    WebDriver driver=new FirefoxDriver();
+	    WebElement verify=driver.findElement(By.xpath("//*[@id='container']/div/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[1]"));
+	    if(verify.getText().equals("Midtrans Pillow"))
+	    {
+	    	
+	    	Assert.assertTrue(true);
+	    }
+		
+	
+	    
+	}
+	
+	
+	
+
+}

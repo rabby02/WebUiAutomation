@@ -1,0 +1,45 @@
+package practice.java;
+
+public class StringPalindrome {
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println(StringPalindrome.StringIn("madams"));
+		//StringPalindrome.StringIn("madam");
+		String str="Madam";
+		String rev="";
+		//boolean flag=false;
+		for(int i=str.length();i>=0;i--)
+		{
+			
+			
+			rev=rev+str.charAt(i);
+		}
+		if(str.equalsIgnoreCase(rev))
+		{
+			
+			
+			System.out.println("Palindrome");
+			
+		}
+		else
+		{
+			System.out.println("not Palindrome");
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+
+		
+	}
+
+}

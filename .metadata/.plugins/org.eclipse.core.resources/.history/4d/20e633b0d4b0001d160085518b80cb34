@@ -1,0 +1,20 @@
+package Selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SeleniumPrac {
+	
+	public WebDriver driver;
+	   public void launch() throws InterruptedException {
+
+	          System.setProperty("webdriver.chrome.driver",
+	                   "C:\\Users\\Hitendra\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+	          driver = new FirefoxDriver();
+	          driver.manage().window().maximize();
+	          driver.get("https://www.automationtestinginsider.com/2019/08/student-registration-form.html");
+	          Thread.sleep(1000);
+	          
+	     }
+
+}

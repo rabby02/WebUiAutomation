@@ -1,0 +1,10 @@
+package TestNgg;
+
+public class Testt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

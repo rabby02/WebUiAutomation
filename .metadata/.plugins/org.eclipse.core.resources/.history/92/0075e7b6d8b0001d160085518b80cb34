@@ -1,0 +1,114 @@
+package Selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Dropdown {
+	
+	public WebDriver driver;
+
+
+
+    public void launch() throws InterruptedException {
+
+
+
+         System.setProperty("webdriver.chrome.driver","/Users/shaheenhaider/Downloads/chromedriver_mac64\\ \\(1\\)/chromedriver");
+
+         driver = new ChromeDriver();
+
+         driver.manage().window().maximize();
+
+         driver.get("https://www.automationtestinginsider.com/2019/08/student-registration-form.html");
+
+         Thread.sleep(2000);
+
+    }
+
+
+
+    public void dropDownDemo() throws InterruptedException {
+
+
+
+         WebElement bDay = driver.findElement(By.id("Birthday_Day"));
+
+         WebElement bMonth = driver.findElement(By.id("Birthday_Month"));
+
+         WebElement bYear = driver.findElement(By.id("Birthday_Year"));
+
+
+
+         Select selectDay = new Select(bDay);
+
+         Select selectMonth = new Select(bMonth);
+
+         Select selectYear = new Select(bYear);
+
+
+
+         selectDay.selectByIndex(4); // 4
+
+         Thread.sleep(1000);
+
+         selectMonth.selectByValue("February");
+
+         selectMonth.selectByValue("January");
+
+         Thread.sleep(1000);
+
+         selectYear.selectByVisibleText("1990");
+
+         Thread.sleep(1000);
+
+
+
+         WebElement firstSelectedItem = selectMonth.getFirstSelectedOption();
+
+         System.out.println(firstSelectedItem.getText());
+
+
+
+         List<WebElement> monthList = selectMonth.getOptions();
+
+
+
+         System.out.println("total Months: " + monthList.size()); // 13
+
+
+
+         for (WebElement ele : monthList) {
+
+             System.out.println(ele.getText());
+
+         }
+
+    }
+
+
+
+    public void tearDown() {
+
+         driver.close();
+
+    }
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		 Dropdown obj = new Dropdown();
+
+         obj.launch();
+
+         obj.dropDownDemo();
+
+         obj.tearDown();
+
+
+	}
+
+}

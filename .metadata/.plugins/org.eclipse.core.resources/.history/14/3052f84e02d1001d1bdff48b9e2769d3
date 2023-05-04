@@ -1,0 +1,65 @@
+package practice.java;
+
+public class tester {
+	
+	public static void methD()
+	{
+		//System.out.println(Functionalities.HelloInt(5));
+		
+		Functionalities f=new Functionalities();
+		f.Integer();
+	}
+		
+		static void play()
+		{
+			
+			System.out.println("hh");
+		}
+		
+		void ececute()
+		{
+			
+			System.out.println("Pka");
+		}
+		
+		void runner()
+		{
+			
+			System.out.println("Hek");
+			play();
+		}
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Functionalities func=new Functionalities();
+	//	func.multtiInput(5, "Yasin looks like", 25);
+		
+		
+		//Static method can be called as class name//
+		tester t=new tester();
+		//t.play();
+		t.runner();
+		
+		t.ececute();
+		methD();
+		
+		//Call the function in main method//
+		
+		
+
+	}
+	
+	
+	
+	
+	
+	
+
+}
+
